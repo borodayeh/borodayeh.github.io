@@ -1,279 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fa">
 <head>
-
-<!-- Meta Tags -->
-<meta charset="UTF-8">
-<title>قالب یک صفحه‌ای واکنش‌گرا</title>
-<meta name="description" content="توضیحات سایت خود را وارد کنید" />
-
-<!-- Mobile Specifics -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="HandheldFriendly" content="true"/>
-<meta name="MobileOptimized" content="320"/>
-
-<!-- Bootstrap -->
-<link href="_include/css/bootstrap.min.css" rel="stylesheet">
-
-<!-- Main Style -->
-<link href="_include/css/main.css" rel="stylesheet">
-
-<!-- Supersized -->
-<link href="_include/css/supersized.css" rel="stylesheet">
-<link href="_include/css/supersized.shutter.css" rel="stylesheet">
-
-<!-- FancyBox -->
-<link href="_include/css/fancybox/jquery.fancybox.css" rel="stylesheet">
-
-<!-- Font Icons -->
-<link href="_include/css/fonts.css" rel="stylesheet">
-
-<!-- Shortcodes -->
-<link href="_include/css/shortcodes.css" rel="stylesheet">
-
-<!-- Responsive -->
-<link href="_include/css/bootstrap-responsive.min.css" rel="stylesheet">
-<link href="_include/css/responsive.css" rel="stylesheet">
-
-<!-- Google Font -->
-<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700,900' rel='stylesheet' type='text/css'>
-
-<!-- Fav Icon -->
-<link rel="shortcut icon" href="#">
-
-<!-- Modernizr -->
-<script src="_include/js/modernizr.js"></script>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>وبسایت مینیمال مقالات</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 10px;
+        }
+        .navbar a:hover {
+            color: #ffa500;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 3em;
+        }
+        .article-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .article {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .article:hover {
+            transform: translateY(-10px);
+        }
+        .article img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .article-content {
+            padding: 15px;
+        }
+        .article-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .article-content p {
+            font-size: 0.9em;
+            line-height: 1.6;
+            color: #777;
+        }
+        .article-content a {
+            text-decoration: none;
+            color: #ffa500;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
 </head>
-
 <body>
 
-<!-- This section is for Splash Screen -->
-<div class="ole">
-<section id="jSplash">
-	<div id="circle"></div>
-</section>
-</div>
-<!-- End of Splash Screen -->
-
-<!-- Homepage Slider -->
-<div id="home-slider">
-    <div class="overlay"></div>
-    <div class="slider-text">
-    	<div id="slidecaption"></div>
-    </div>   
-	<div class="control-nav">
-        <a id="prevslide" class="load-item"><i class="font-icon-arrow-simple-left"></i></a>
-        <a id="nextslide" class="load-item"><i class="font-icon-arrow-simple-right"></i></a>
-        <ul id="slide-list"></ul>
-        <a id="nextsection" href="#work"><i class="font-icon-arrow-simple-down"></i></a>
-    </div>
-</div>
-<!-- End Homepage Slider -->
-
-<!-- Header -->
-<header>
-    <div class="sticky-nav">
-    	<a id="mobile-nav" class="menu-nav" href="#menu-nav"></a>
-        <div id="logo">
-        	<a id="goUp" href="#home-slider" title="قالب یک صفحه‌ای واکنش‌گرا">قالب واکنش‌گرا</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">لوگو</a>
         </div>
-        <nav id="menu">
-        	<ul id="menu-nav">
-            	<li class="current"><a href="#home-slider">خانه</a></li>
-                <li><a href="#work">کارهای ما</a></li>
-                <li><a href="#about">درباره ما</a></li>
-                <li><a href="#contact">تماس با ما</a></li>
-                <li><a href="shortcodes.html" class="external">کدهای کوتاه</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-<!-- End Header -->
+        <div class="menu">
+            <a href="#">صفحه اصلی</a>
+            <a href="#">مقالات</a>
+            <a href="#">تماس با ما</a>
+        </div>
+    </nav>
+    <!-- Navigation end -->
 
-<!-- Our Work Section -->
-<div id="work" class="page">
-	<div class="container">
-    	<!-- Title Page -->
-        <div class="row">
-            <div class="span12">
-                <div class="title-page">
-                    <h2 class="title">کارهای ما</h2>
-                    <h3 class="title-description">پروژه‌های ما را در <a href="#">Dribbble</a> مشاهده کنید.</h3>
-                </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>به وبسایت مقالات خوش آمدید</h1>
+        <p>مقالات جذاب و آموزشی در یک مکان</p>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- Articles Section -->
+    <section class="article-container">
+        <!-- مقالات باید از طریق سیستم مدیریت محتوا به روز رسانی شوند -->
+        <!-- این بخش برای نمایش مقالات جدید به صورت پویا به روز می‌شود -->
+        <div class="article">
+            <img src="images/article-thumbnail1.jpg" alt="تصویر مقاله">
+            <div class="article-content">
+                <h3>عنوان مقاله ۱</h3>
+                <p>این یک توضیح کوتاه درباره مقاله است که کاربران را جذب می‌کند تا بیشتر بخوانند.</p>
+                <a href="#">ادامه مطلب...</a>
             </div>
         </div>
-        <!-- End Title Page -->
-        
-        <!-- Portfolio Projects -->
-        <div class="row">
-        	<div class="span3">
-            	<!-- Filter -->
-                <nav id="options" class="work-nav">
-                    <ul id="filters" class="option-set" data-option-key="filter">
-                    	<li class="type-work">نوع کار</li>
-                        <li><a href="#filter" data-option-value="*" class="selected">همه پروژه‌ها</a></li>
-                        <li><a href="#filter" data-option-value=".design">طراحی</a></li>
-                        <li><a href="#filter" data-option-value=".photography">عکاسی</a></li>
-                        <li><a href="#filter" data-option-value=".video">ویدیو</a></li>
-                    </ul>
-                </nav>
-                <!-- End Filter -->
-            </div>
-            
-            <div class="span9">
-            	<div class="row">
-                	<section id="projects">
-                    	<ul id="thumbs">
-                        	<!-- Item Project and Filter Name -->
-                        	<li class="item-thumbs span3 design">
-                            	<!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                            	<a class="hover-wrap fancybox" data-fancybox-group="gallery" title="شهر" href="_include/img/work/full/image-01-full.jpg">
-                                	<span class="overlay-img"></span>
-                                    <span class="overlay-img-thumb font-icon-plus"></span>
-                                </a>
-                                <!-- Thumb Image and Description -->
-                                <img src="_include/img/work/thumbs/image-01.jpg" alt="توضیحات تصویر">
-                            </li>
-                        	<!-- End Item Project -->
-                            
-                            <!-- سایر پروژه‌ها ... -->
-                        </ul>
-                    </section>
-            	</div>
+        <div class="article">
+            <img src="images/article-thumbnail2.jpg" alt="تصویر مقاله">
+            <div class="article-content">
+                <h3>عنوان مقاله ۲</h3>
+                <p>این یک توضیح کوتاه درباره مقاله است که کاربران را جذب می‌کند تا بیشتر بخوانند.</p>
+                <a href="#">ادامه مطلب...</a>
             </div>
         </div>
-        <!-- End Portfolio Projects -->
-    </div>
-</div>
-<!-- End Our Work Section -->
-
-<!-- About Section -->
-<div id="about" class="page-alternate">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">درباره ما</h2>
-                <h3 class="title-description">با تیم و فرهنگ ما آشنا شوید.</h3>
+        <div class="article">
+            <img src="images/article-thumbnail3.jpg" alt="تصویر مقاله">
+            <div class="article-content">
+                <h3>عنوان مقاله ۳</h3>
+                <p>این یک توضیح کوتاه درباره مقاله است که کاربران را جذب می‌کند تا بیشتر بخوانند.</p>
+                <a href="#">ادامه مطلب...</a>
             </div>
         </div>
-    </div>
-    <!-- End Title Page -->
-    
-    <!-- People -->
-    <div class="row">
-    	<!-- Start Profile -->
-    	<div class="span4 profile">
-        	<div class="image-wrap">
-                <div class="hover-wrap">
-                    <span class="overlay-img"></span>
-                    <span class="overlay-text-thumb">مدیر فنی/بنیان‌گذار</span>
-                </div>
-                <img src="_include/img/profile/profile-01.jpg" alt="جان دو">
-            </div>
-            <h3 class="profile-name">جان دو</h3>
-            <p class="profile-description">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ. <a href="#">بیشتر بخوانید</a>.</p>
-            
-            <div class="social">
-            	<ul class="social-icons">
-                	<li><a href="#"><i class="font-icon-social-twitter"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-dribbble"></i></a></li>
-                    <li><a href="#"><i class="font-icon-social-facebook"></i></a></li>
-                </ul>
-            </div>
-        </div>
-        <!-- End Profile -->
-        
-        <!-- سایر پروفایل‌ها ... -->
-    </div>
-    <!-- End People -->
-</div>
-</div>
-<!-- End About Section -->
+    </section>
+    <!-- Articles Section end -->
 
-
-<!-- Contact Section -->
-<div id="contact" class="page">
-<div class="container">
-    <!-- Title Page -->
-    <div class="row">
-        <div class="span12">
-            <div class="title-page">
-                <h2 class="title">تماس با ما</h2>
-                <h3 class="title-description">ما در حال پذیرش پروژه‌های جدید مشتریان هستیم. منتظر خدمت به شما هستیم.</h3>
-            </div>
-        </div>
-    </div>
-    <!-- End Title Page -->
-    
-    <!-- Contact Form -->
-    <div class="row">
-    	<div class="span9">
-        	<form id="contact-form" class="contact-form" action="#">
-            	<p class="contact-name">
-            		<input id="contact_name" type="text" placeholder="نام کامل" value="" name="name" />
-                </p>
-                <p class="contact-email">
-                	<input id="contact_email" type="text" placeholder="آدرس ایمیل" value="" name="email" />
-                </p>
-                <p class="contact-message">
-                	<textarea id="contact_message" placeholder="پیام شما" name="message" rows="15" cols="40"></textarea>
-                </p>
-                <p class="contact-submit">
-                	<a id="contact-submit" class="submit" href="#">ارسال ایمیل</a>
-                </p>
-                <div id="response"></div>
-            </form>
-        </div>
-        <div class="span3">
-        	<div class="contact-details">
-        		<h3>اطلاعات تماس</h3>
-                <ul>
-                    <li><a href="#">hello@brushed.com</a></li>
-                    <li>(916) 375-2525</li>
-                    <li>
-                        استودیو براشد
-                        <br>
-                        جزیره ونیش. ۱۰۵
-                        <br>
-                        نامشخص
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!-- End Contact Form -->
-</div>
-</div>
-<!-- End Contact Section -->
-
-<!-- Footer -->
-<footer>
-	<p class="credits">&copy;2024 براشد. <a href="#" title="قالب یک صفحه‌ای واکنش‌گرا">قالب واکنش‌گرا</a> توسط <a href="#" title="طراح وب و توسعه‌دهنده فرانت‌اند">طراح وب</a></p>
-</footer>
-<!-- End Footer -->
-
-<!-- Back To Top -->
-<a id="back-to-top" href="#">
-	<i class="font-icon-arrow-simple-up"></i>
-</a>
-<!-- End Back to Top -->
-
-<!-- Js -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> <!-- jQuery Core -->
-<script src="_include/js/bootstrap.min.js"></script> <!-- Bootstrap -->
-<script src="_include/js/supersized.3.2.7.min.js"></script> <!-- Slider -->
-<script src="_include/js/waypoints.js"></script> <!-- WayPoints -->
-<script src="_include/js/waypoints-sticky.js"></script> <!-- Waypoints for Header -->
-<script src="_include/js/jquery.isotope.js"></script> <!-- Isotope Filter -->
-<script src="_include/js/jquery.fancybox.pack.js"></script> <!-- Fancybox -->
-<script src="_include/js/jquery.fancybox-media.js"></script> <!-- Fancybox for Media -->
-<script src="_include/js/jquery.tweet.js"></script> <!-- Tweet -->
-<script src="_include/js/plugins.js"></script> <!-- Contains: jPreloader, jQuery Easing, jQuery ScrollTo, jQuery One Page Navi -->
-<script src="_include/js/main.js"></script> <!-- Default JS -->
-<!-- End Js -->
+    <!-- Footer -->
+    <footer>
+        <p>تمامی حقوق محفوظ است &copy; 2024</p>
+    </footer>
+    <!-- Footer end -->
 
 </body>
 </html>
