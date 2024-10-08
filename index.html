@@ -1,137 +1,147 @@
 <!doctype html>
-<!--
-	Author by FreeHTML5.co
-	Twitter: https://twitter.com/fh5co
-	Facebook: https://fb.com/fh5co
-	URL: https://freehtml5.co
--->
 <html lang="fa">
 <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/slick.css">
-	<title>نویسنده</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>وبسایت مینیمال مقالات</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 10px;
+        }
+        .navbar a:hover {
+            color: #ffa500;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px;
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+        }
+        .hero h1 {
+            font-size: 3em;
+        }
+        .article-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .article {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .article:hover {
+            transform: translateY(-10px);
+        }
+        .article img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .article-content {
+            padding: 15px;
+        }
+        .article-content h3 {
+            margin: 0;
+            font-size: 1.5em;
+        }
+        .article-content p {
+            font-size: 0.9em;
+            line-height: 1.6;
+            color: #777;
+        }
+        .article-content a {
+            text-decoration: none;
+            color: #ffa500;
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
 
-	<!-- Navigation -->
-	<nav class="site-navigation">
-		<div class="site-navigation-inner site-container">
-			<img src="images/site-logo.png" alt="لوگو سایت">
-			<div class="main-navigation">
-				<ul class="main-navigation__ul">
-					<li><a href="#">صفحه اصلی</a></li>
-					<li><a href="#">صفحه ۱</a></li>
-					<li><a href="#">صفحه ۲</a></li>
-					<li><a href="#">صفحه ۳</a></li>
-					<li><a href="#">صفحه ۴</a></li>
-				</ul>
-			</div>
-			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
-			<script>
-				function myFunction(x) {
-					x.classList.toggle("change");
-				}
-			</script>
-		</div>
-	</nav>
-	<!-- Navigation end -->
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">لوگو</a>
+        </div>
+        <div class="menu">
+            <a href="#">صفحه اصلی</a>
+            <a href="#">مقالات</a>
+            <a href="#">تماس با ما</a>
+        </div>
+    </nav>
+    <!-- Navigation end -->
 
-	<!-- Top banner -->
-	<section class="fh5co-top-banner">
-		<div class="top-banner__inner site-container">
-			<div class="top-banner__image">
-				<img src="images/top-banner-author.jpg" alt="تصویر نویسنده">
-			</div>
-			<div class="top-banner__text">
-				<div class="top-banner__text-up">
-					<span class="brand-span">سلام! من</span>
-					<h2 class="top-banner__h2">جون</h2>
-				</div>
-				<div class="top-banner__text-down">
-					<h2 class="top-banner__h2">اسمیت</h2>
-					<span class="brand-span">نویسنده، مؤلف، مسافر</span>
-				</div>
-				<p>یک مرد. یک مأموریت. آیا می‌تواند فراتر برود؟</p>
-				<a href="#" class="brand-button">خواندن بیوگرافی > </a>
-			</div>
-		</div>
-	</section>
-	<!-- Top banner end -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>به وبسایت مقالات خوش آمدید</h1>
+        <p>مقالات جذاب و آموزشی در یک مکان</p>
+    </section>
+    <!-- Hero Section end -->
 
-	<!-- About me -->
-	<section class="fh5co-about-me">
-		<div class="about-me-inner site-container">
-			<article class="portfolio-wrapper">
-				<div class="portfolio__img">
-					<img src="images/about-me.jpg" class="about-me__profile" alt="تصویر من">
-				</div>
-				<div class="portfolio__bottom">
-					<div class="portfolio__name">
-						<span>ج</span>
-						<h2 class="universal-h2">جون اسمیت</h2>
-					</div>
-					<p>جون اسمیت نویسنده داستان کوتاه، رمان‌نویس، و شاعر برنده جوایز است.</p>
-				</div>
-			</article>
-			<div class="about-me__text">
-				<div class="about-me-slider">
-					<div class="about-me-single-slide">
-						<h2 class="universal-h2 universal-h2-bckg">درباره من</h2>
-						<p><span>ا</span>و در بیش از ده مجله و انتشارات مختلف از جمله «Buzzy Mag»، «The Spirit of Poe» و «Dark Horizons» حضور دارد و همچنین مدیرعامل شرکتی در حوزه نشر کتاب‌های سفارشی و بازاریابی شبکه‌های اجتماعی است.</p>
-						<h4>نویسنده</h4>
-						<p class="p-white">ببینید</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="about-me-bckg"></div>
-	</section>
-	<!-- About me end -->
+    <!-- Articles Section -->
+    <section class="article-container">
+        <div class="article">
+            <img src="images/article-thumbnail1.jpg" alt="Thumbnail">
+            <div class="article-content">
+                <h3>عنوان مقاله ۱</h3>
+                <p>این یک توضیح کوتاه درباره مقاله است که کاربران را جذب می‌کند تا بیشتر بخوانند.</p>
+                <a href="#">ادامه مطلب...</a>
+            </div>
+        </div>
+        <div class="article">
+            <img src="images/article-thumbnail2.jpg" alt="Thumbnail">
+            <div class="article-content">
+                <h3>عنوان مقاله ۲</h3>
+                <p>این یک توضیح کوتاه درباره مقاله است که کاربران را جذب می‌کند تا بیشتر بخوانند.</p>
+                <a href="#">ادامه مطلب...</a>
+            </div>
+        </div>
+        <div class="article">
+            <img src="images/article-thumbnail3.jpg" alt="Thumbnail">
+            <div class="article-content">
+                <h3>عنوان مقاله ۳</h3>
+                <p>این یک توضیح کوتاه درباره مقاله است که کاربران را جذب می‌کند تا بیشتر بخوانند.</p>
+                <a href="#">ادامه مطلب...</a>
+            </div>
+        </div>
+    </section>
+    <!-- Articles Section end -->
 
-	<!-- Books and CD -->
-	<section class="fh5co-books">
-		<div class="site-container">
-			<h2 class="universal-h2 universal-h2-bckg">کتاب‌های جدید و سی‌دی‌ها</h2>
-			<div class="books">
-				<div class="single-book">
-					<a href="#" class="single-book__img">
-						<img src="images/books-1.jpg" alt="کتاب و سی‌دی">
-						<div class="single-book_download">
-							<img src="images/download.svg" alt="تصویر کتاب">
-						</div>
-					</a>
-					<h4 class="single-book__title">اولیوانی</h4>
-					<span class="single-book__price">$15.00</span>
-					<!-- star rating -->
-					<div class="rating">
-						<span>&#9734;</span>
-						<span>&#9734;</span>
-						<span>&#9734;</span>
-						<span>&#9734;</span>
-						<span>&#9734;</span>
-					</div>
-					<!-- star rating end -->
-				</div>
-				<!-- ادامه کتب و سایر اطلاعات ... -->
-			</div>
-			<div class="books-brand-button">
-				<a href="#" class="brand-button">مشاهده بیشتر</a>
-			</div>
-		</div>
-	</section>
-	<!-- Books and CD end -->
-
-	<!-- Scripts -->
-	<script src="js/jquery.min.js"></script>
-	<script src="js/slick.min.js"></script>
-	<script src="js/main.js"></script>
+    <!-- Footer -->
+    <footer>
+        <p>تمامی حقوق محفوظ است &copy; 2024</p>
+    </footer>
+    <!-- Footer end -->
 
 </body>
 </html>
