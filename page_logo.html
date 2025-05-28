@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike Logo Archive | Logo History & Downloads</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background-color: #fafafa;
+        }
+        .logo-preview {
+            transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        .logo-preview:hover {
+            transform: scale(1.02);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #000;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        ::selection {
+            background: rgba(0,0,0,0.1);
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #000;
+        }
+        .timeline-item:after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 17px;
+            width: 2px;
+            height: calc(100% - 17px);
+            background: #e5e5e5;
+        }
+        .timeline-item:last-child:after {
+            display: none;
+        }
+        .file-card:hover {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            transform: translateY(-5px);
+        }
+        .color-swatch {
+            transition: all 0.3s ease;
+        }
+        .color-swatch:hover {
+            transform: scale(1.1);
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-100">
+            <div class="container mx-auto px-6 py-5">
+                <div class="flex justify-between items-center">
+                    <a href="index.html" class="text-xl tracking-tight font-light">ARCHIVE</a>
+                    <nav class="hidden md:flex space-x-8">
+                        <a href="#" class="nav-link text-sm font-light">Logos</a>
+                        <a href="#" class="nav-link text-sm font-light">History</a>
+                        <a href="#" class="nav-link text-sm font-light">Collections</a>
+                        <a href="#" class="nav-link text-sm font-light">About</a>
+                    </nav>
+                    <button class="md:hidden">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 12H21" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M3 6H21" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                            <path d="M3 18H21" stroke="black" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow">
+            <!-- Logo Hero Section -->
+            <section class="py-16 md:py-24 fade-in">
+                <div class="container mx-auto px-6">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/2 flex items-center justify-center bg-gray-50 rounded-2xl p-12">
+                            <div class="logo-preview w-full max-w-md">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/1200px-Logo_NIKE.svg.png" 
+                                     alt="Nike Swoosh Logo" 
+                                     class="w-full h-auto">
+                            </div>
+                        </div>
+                        <div class="md:w-1/2">
+                            <div class="mb-6">
+                                <span class="text-sm text-gray-500">Sportswear / Founded 1964</span>
+                                <h1 class="text-4xl md:text-5xl font-light mt-2">Nike Swoosh</h1>
+                                <div class="flex items-center mt-4 space-x-4">
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">1971 - Present</span>
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Carolyn Davidson</span>
+                                </div>
+                            </div>
+                            
+                            <div class="prose max-w-none text-gray-700 mb-8">
+                                <p>The Nike Swoosh is one of the most recognizable brand symbols in the world, representing motion and speed. Designed by Carolyn Davidson in 1971 for just $35, the logo has become synonymous with athletic excellence and innovation.</p>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-4 mb-8">
+                                <a href="#downloads" class="px-6 py-3 bg-black text-white rounded-lg flex items-center space-x-2 hover:bg-gray-800 transition">
+                                    <i class="fas fa-download"></i>
+                                    <span>Download Logo</span>
+                                </a>
+                                <a href="#history" class="px-6 py-3 border border-gray-300 rounded-lg flex items-center space-x-2 hover:bg-gray-50 transition">
+                                    <i class="fas fa-history"></i>
+                                    <span>View History</span>
+                                </a>
+                            </div>
+                            
+                            <div class="border-t border-gray-100 pt-6">
+                                <h3 class="text-sm font-medium mb-4">Official Colors</h3>
+                                <div class="flex space-x-4">
+                                    <div class="color-swatch w-10 h-10 rounded-full bg-black" 
+                                         title="Nike Black" 
+                                         data-color="#000000"></div>
+                                    <div class="color-swatch w-10 h-10 rounded-full bg-white border border-gray-200" 
+                                         title="White" 
+                                         data-color="#FFFFFF"></div>
+                                    <div class="color-swatch w-10 h-10 rounded-full bg-gray-200" 
+                                         title="Light Gray" 
+                                         data-color="#E5E5E5"></div>
+                                    <div class="color-swatch w-10 h-10 rounded-full bg-red-600" 
+                                         title="University Red" 
+                                         data-color="#E01E1E"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab Navigation -->
+            <section class="border-t border-b border-gray-100 bg-white sticky top-16 z-40">
+                <div class="container mx-auto px-6">
+                    <div class="flex overflow-x-auto">
+                        <button class="tab-button px-6 py-4 border-b-2 border-transparent font-medium text-sm whitespace-nowrap hover:text-black active" data-tab="overview">
+                            Overview
+                        </button>
+                        <button class="tab-button px-6 py-4 border-b-2 border-transparent font-medium text-sm whitespace-nowrap hover:text-black" data-tab="history">
+                            History
+                        </button>
+                        <button class="tab-button px-6 py-4 border-b-2 border-transparent font-medium text-sm whitespace-nowrap hover:text-black" data-tab="downloads">
+                            Downloads
+                        </button>
+                        <button class="tab-button px-6 py-4 border-b-2 border-transparent font-medium text-sm whitespace-nowrap hover:text-black" data-tab="usage">
+                            Usage Guidelines
+                        </button>
+                        <button class="tab-button px-6 py-4 border-b-2 border-transparent font-medium text-sm whitespace-nowrap hover:text-black" data-tab="variations">
+                            Variations
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tab Content -->
+            <section class="py-12 md:py-20">
+                <div class="container mx-auto px-6 max-w-4xl">
+                    <!-- Overview Tab -->
+                    <div id="overview" class="tab-content active">
+                        <h2 class="text-2xl font-light mb-6">Logo Overview</h2>
+                        <div class="prose max-w-none text-gray-700 mb-8">
+                            <p>The Nike Swoosh logo is a fluid, dynamic checkmark shape that suggests motion and speed. Its simple yet powerful design has remained largely unchanged since its creation, becoming one of the most successful brand marks in history.</p>
+                            
+                            <h3 class="text-xl font-light mt-8 mb-4">Design Elements</h3>
+                            <ul class="space-y-2">
+                                <li><strong>Shape:</strong> The Swoosh represents the wing of Nike, the Greek goddess of victory</li>
+                                <li><strong>Flow:</strong> The curved shape implies motion and speed</li>
+                                <li><strong>Negative Space:</strong> The empty space within the curve creates visual interest</li>
+                                <li><strong>Typography:</strong> Originally paired with a custom Futura Bold variant (1971-1995)</li>
+                            </ul>
+                            
+                            <h3 class="text-xl font-light mt-8 mb-4">Cultural Impact</h3>
+                            <p>The Swoosh has transcended its role as a corporate logo to become a cultural icon. It appears on everything from sneakers to athlete endorsements, representing not just a brand but an entire lifestyle of athleticism and determination.</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8 mt-12">
+                            <div>
+                                <h3 class="text-sm font-medium mb-4">DESIGNER</h3>
+                                <div class="flex items-center space-x-4">
+                                    <div class="w-16 h-16 rounded-full bg-gray-200 overflow-hidden">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Carolyn_Davidson_2012.jpg/800px-Carolyn_Davidson_2012.jpg" 
+                                             alt="Carolyn Davidson" 
+                                             class="w-full h-full object-cover">
+                                    </div>
+                                    <div>
+                                        <h4 class="font-medium">Carolyn Davidson</h4>
+                                        <p class="text-sm text-gray-500">Graphic Design Student at Portland State University</p>
+                                    </div>
+                                </div>
+                                <p class="text-sm text-gray-500 mt-4">Davidson was paid $35 for her design in 1971. In 1983, Nike founder Phil Knight gave her a diamond Swoosh ring and an envelope containing Nike stock.</p>
+                            </div>
+                            <div>
+                                <h3 class="text-sm font-medium mb-4">BRAND NAME</h3>
+                                <p class="text-gray-700">Nike is named after the Greek goddess of victory. The company was originally called Blue Ribbon Sports when founded in 1964, changing to Nike, Inc. in 1971 when the Swoosh was introduced.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- History Tab -->
+                    <div id="history" class="tab-content">
+                        <h2 class="text-2xl font-light mb-6">Historical Evolution</h2>
+                        <div class="space-y-8">
+                            <div class="timeline-item">
+                                <h4 class="font-medium mb-1">1964-1971: Pre-Swoosh Era</h4>
+                                <p class="text-gray-500">Founded as Blue Ribbon Sports, the company used a simple wordmark with no distinctive logo during its early years distributing Onitsuka Tiger shoes.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4 class="font-medium mb-1">1971: Creation of the Swoosh</h4>
+                                <p class="text-gray-500">Carolyn Davidson, a graphic design student at Portland State University, created the Swoosh logo while Phil Knight was teaching accounting classes there. The logo debuted on shoes in June 1971.</p>
+                                <div class="mt-4">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nike_logo_1971.png/800px-Nike_logo_1971.png" 
+                                         alt="Original 1971 Nike Logo" 
+                                         class="w-64 h-auto border border-gray-200 rounded">
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <h4 class="font-medium mb-1">1978: Swoosh Standalone</h4>
+                                <p class="text-gray-500">Nike began using the Swoosh without the wordmark in some applications, establishing it as a standalone brand symbol.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4 class="font-medium mb-1">1985: Air Jordan Impact</h4>
+                                <p class="text-gray-500">The Air Jordan line helped elevate the Swoosh to cultural icon status, with the logo appearing prominently on Michael Jordan's revolutionary sneakers.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h4 class="font-medium mb-1">1995: Wordmark Redesign</h4>
+                                <p class="text-gray-500">Nike updated its wordmark to a more contemporary sans-serif typeface while keeping the Swoosh unchanged.</p>
+                                <div class="mt-4">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/800px-Logo_NIKE.svg.png" 
+                                         alt="1995 Nike Logo" 
+                                         class="w-64 h-auto border border-gray-200 rounded">
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <h4 class="font-medium mb-1">Present: Global Recognition</h4>
+                                <p class="text-gray-500">Today the Swoosh stands alone in most applications, recognized worldwide without needing the Nike name. It remains one of the most valuable brand symbols.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Downloads Tab -->
+                    <div id="downloads" class="tab-content">
+                        <h2 class="text-2xl font-light mb-6">Logo Downloads</h2>
+                        <div class="prose max-w-none text-gray-700 mb-8">
+                            <p>Download official Nike logo files in various formats. These files are provided for educational and historical reference purposes only.</p>
+                            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-4 my-6">
+                                <p class="text-sm text-yellow-700"><strong>Note:</strong> Commercial use of the Nike logo requires explicit permission from Nike, Inc. These downloads are provided for educational purposes only.</p>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-light mb-6">Vector Formats</h3>
+                        <div class="grid md:grid-cols-2 gap-6 mb-12">
+                            <div class="file-card border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h4 class="font-medium">EPS</h4>
+                                        <p class="text-sm text-gray-500">Encapsulated PostScript</p>
+                                    </div>
+                                    <div class="px-3 py-1 bg-gray-100 rounded-full text-xs">Vector</div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-sm text-gray-500">300 DPI</div>
+                                    <a href="#" class="text-sm font-medium flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                                        <span>Download</span>
+                                        <i class="fas fa-arrow-down text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="file-card border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h4 class="font-medium">SVG</h4>
+                                        <p class="text-sm text-gray-500">Scalable Vector Graphic</p>
+                                    </div>
+                                    <div class="px-3 py-1 bg-gray-100 rounded-full text-xs">Vector</div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-sm text-gray-500">Resolution Independent</div>
+                                    <a href="#" class="text-sm font-medium flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                                        <span>Download</span>
+                                        <i class="fas fa-arrow-down text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="file-card border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h4 class="font-medium">AI</h4>
+                                        <p class="text-sm text-gray-500">Adobe Illustrator</p>
+                                    </div>
+                                    <div class="px-3 py-1 bg-gray-100 rounded-full text-xs">Vector</div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-sm text-gray-500">CC 2023</div>
+                                    <a href="#" class="text-sm font-medium flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                                        <span>Download</span>
+                                        <i class="fas fa-arrow-down text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="file-card border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h4 class="font-medium">PDF</h4>
+                                        <p class="text-sm text-gray-500">Portable Document Format</p>
+                                    </div>
+                                    <div class="px-3 py-1 bg-gray-100 rounded-full text-xs">Vector</div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-sm text-gray-500">Editable</div>
+                                    <a href="#" class="text-sm font-medium flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                                        <span>Download</span>
+                                        <i class="fas fa-arrow-down text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="text-xl font-light mb-6">Raster Formats</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="file-card border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h4 class="font-medium">PNG</h4>
+                                        <p class="text-sm text-gray-500">Transparent Background</p>
+                                    </div>
+                                    <div class="px-3 py-1 bg-gray-100 rounded-full text-xs">3000px</div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-sm text-gray-500">Transparent</div>
+                                    <a href="#" class="text-sm font-medium flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                                        <span>Download</span>
+                                        <i class="fas fa-arrow-down text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="file-card border border-gray-200 rounded-lg p-6 hover:shadow-md transition-all duration-300">
+                                <div class="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h4 class="font-medium">JPG</h4>
+                                        <p class="text-sm text-gray-500">White Background</p>
+                                    </div>
+                                    <div class="px-3 py-1 bg-gray-100 rounded-full text-xs">3000px</div>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="text-sm text-gray-500">High Resolution</div>
+                                    <a href="#" class="text-sm font-medium flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                                        <span>Download</span>
+                                        <i class="fas fa-arrow-down text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12 bg-gray-50 p-6 rounded-lg">
+                            <h3 class="text-xl font-light mb-4">Historical Versions</h3>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="border border-gray-200 rounded-lg p-4">
+                                    <div class="bg-gray-100 p-6 rounded flex justify-center mb-4">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Nike_logo_1971.png/800px-Nike_logo_1971.png" 
+                                             alt="1971 Nike Logo" 
+                                             class="h-24 object-contain">
+                                    </div>
+                                    <h4 class="font-medium mb-1">Original 1971 Logo</h4>
+                                    <p class="text-sm text-gray-500 mb-3">With Futura Bold wordmark</p>
+                                    <a href="#" class="text-sm font-medium flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                                        <span>Download EPS</span>
+                                        <i class="fas fa-arrow-down text-xs"></i>
+                                    </a>
+                                </div>
+                                <div class="border border-gray-200 rounded-lg p-4">
+                                    <div class="bg-gray-100 p-6 rounded flex justify-center mb-4">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Nike_logo_1978.png/800px-Nike_logo_1978.png" 
+                                             alt="1978 Nike Logo" 
+                                             class="h-24 object-contain">
+                                    </div>
+                                    <h4 class="font-medium mb-1">1978 Variation</h4>
+                                    <p class="text-sm text-gray-500 mb-3">Modified wordmark spacing</p>
+                                    <a href="#" class="text-sm font-medium flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                                        <span>Download EPS</span>
+                                        <i class="fas fa-arrow-down text-xs"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Usage Guidelines Tab -->
+                    <div id="usage" class="tab-content">
+                        <h2 class="text-2xl font-light mb-6">Usage Guidelines</h2>
+                        <div class="prose max-w-none text-gray-700 mb-8">
+                            <p>Nike has strict guidelines for logo usage to maintain brand integrity. These are general principles based on publicly available information.</p>
+                            
+                            <h3 class="text-xl font-light mt-8 mb-4">Clear Space</h3>
+                            <p>The Nike Swoosh should always have clear space around it equal to at least half the height of the Swoosh. This ensures visibility and prevents visual clutter.</p>
+                            <div class="my-6 p-6 bg-gray-100 rounded-lg flex justify-center">
+                                <div class="relative">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/300px-Logo_NIKE.svg.png" 
+                                         alt="Nike Swoosh with clear space" 
+                                         class="h-32">
+                                    <div class="absolute inset-0 border-2 border-dashed border-gray-400 rounded" style="margin: -16px;"></div>
+                                </div>
+                            </div>
+                            
+                            <h3 class="text-xl font-light mt-8 mb-4">Minimum Size</h3>
+                            <p>The Swoosh should never appear smaller than 8mm in height for print applications or 24px in digital applications.</p>
+                            
+                            <h3 class="text-xl font-light mt-8 mb-4">Color Usage</h3>
+                            <p>The Swoosh is most commonly displayed in black or white, but can appear in any single color that provides sufficient contrast with the background.</p>
+                            
+                            <h3 class="text-xl font-light mt-8 mb-4">Prohibited Uses</h3>
+                            <ul class="space-y-2">
+                                <li>Do not alter the proportions of the Swoosh</li>
+                                <li>Do not rotate the Swoosh</li>
+                                <li>Do not add effects like shadows or gradients</li>
+                                <li>Do not combine with other logos or marks</li>
+                                <li>Do not use as a pattern or decorative element</li>
+                            </ul>
+                            
+                            <div class="bg-red-50 border-l-4 border-red-400 p-4 my-8">
+                                <p class="text-sm text-red-700"><strong>Important:</strong> These guidelines are for reference only. Actual Nike brand guidelines are proprietary. For official usage rights, contact Nike's legal department.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Variations Tab -->
+                    <div id="variations" class="tab-content">
+                        <h2 class="text-2xl font-light mb-6">Logo Variations</h2>
+                        <div class="prose max-w-none text-gray-700 mb-8">
+                            <p>While the core Swoosh remains consistent, Nike has developed specialized versions for different applications and sub-brands.</p>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-2 gap-8">
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <div class="bg-gray-100 p-8 rounded flex justify-center mb-6">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/800px-Logo_NIKE.svg.png" 
+                                         alt="Nike Swoosh" 
+                                         class="h-20 object-contain">
+                                </div>
+                                <h3 class="font-medium mb-2">Primary Logo</h3>
+                                <p class="text-sm text-gray-500 mb-4">Standard black Swoosh on white background</p>
+                                <a href="#" class="text-sm font-medium flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                                    <span>Download</span>
+                                    <i class="fas fa-arrow-down text-xs"></i>
+                                </a>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <div class="bg-gray-800 p-8 rounded flex justify-center mb-6">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/800px-Logo_NIKE.svg.png" 
+                                         alt="Nike Swoosh White" 
+                                         class="h-20 object-contain filter brightness-0 invert">
+                                </div>
+                                <h3 class="font-medium mb-2">Reversed Logo</h3>
+                                <p class="text-sm text-gray-500 mb-4">White Swoosh for dark backgrounds</p>
+                                <a href="#" class="text-sm font-medium flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                                    <span>Download</span>
+                                    <i class="fas fa-arrow-down text-xs"></i>
+                                </a>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <div class="bg-gray-100 p-8 rounded flex justify-center mb-6">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Nike_Just_Do_It_Logo.svg/800px-Nike_Just_Do_It_Logo.svg.png" 
+                                         alt="Nike Just Do It" 
+                                         class="h-20 object-contain">
+                                </div>
+                                <h3 class="font-medium mb-2">With Tagline</h3>
+                                <p class="text-sm text-gray-500 mb-4">"Just Do It" wordmark combination</p>
+                                <a href="#" class="text-sm font-medium flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                                    <span>Download</span>
+                                    <i class="fas fa-arrow-down text-xs"></i>
+                                </a>
+                            </div>
+                            <div class="border border-gray-200 rounded-lg p-6">
+                                <div class="bg-gray-100 p-8 rounded flex justify-center mb-6">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Nike_Air_Logo.svg/800px-Nike_Air_Logo.svg.png" 
+                                         alt="Nike Air" 
+                                         class="h-20 object-contain">
+                                </div>
+                                <h3 class="font-medium mb-2">Air Sub-brand</h3>
+                                <p class="text-sm text-gray-500 mb-4">Special version for Air product line</p>
+                                <a href="#" class="text-sm font-medium flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                                    <span>Download</span>
+                                    <i class="fas fa-arrow-down text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Logos -->
+            <section class="py-16 bg-gray-50 border-t border-gray-100">
+                <div class="container mx-auto px-6">
+                    <h3 class="text-2xl font-light mb-8">Related Logos</h3>
+                    
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                        <a href="#" class="group">
+                            <div class="bg-white rounded-lg aspect-square flex items-center justify-center p-8 shadow-sm group-hover:shadow-md transition-all duration-300">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png" 
+                                     alt="Google" 
+                                     class="max-h-12 object-contain opacity-90 group-hover:opacity-100 transition">
+                            </div>
+                            <div class="mt-3">
+                                <h4 class="font-medium text-sm group-hover:text-black transition">Google</h4>
+                                <p class="text-gray-500 text-xs">1998 - Present</p>
+                            </div>
+                        </a>
+                        <a href="#" class="group">
+                            <div class="bg-white rounded-lg aspect-square flex items-center justify-center p-8 shadow-sm group-hover:shadow-md transition-all duration-300">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png" 
+                                     alt="Apple" 
+                                     class="max-h-12 object-contain opacity-90 group-hover:opacity-100 transition">
+                            </div>
+                            <div class="mt-3">
+                                <h4 class="font-medium text-sm group-hover:text-black transition">Apple</h4>
+                                <p class="text-gray-500 text-xs">1977 - Present</p>
+                            </div>
+                        </a>
+                        <a href="#" class="group">
+                            <div class="bg-white rounded-lg aspect-square flex items-center justify-center p-8 shadow-sm group-hover:shadow-md transition-all duration-300">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Adidas_Logo.svg/800px-Adidas_Logo.svg.png" 
+                                     alt="Adidas" 
+                                     class="max-h-12 object-contain opacity-90 group-hover:opacity-100 transition">
+                            </div>
+                            <div class="mt-3">
+                                <h4 class="font-medium text-sm group-hover:text-black transition">Adidas</h4>
+                                <p class="text-gray-500 text-xs">1971 - Present</p>
+                            </div>
+                        </a>
+                        <a href="#" class="group">
+                            <div class="bg-white rounded-lg aspect-square flex items-center justify-center p-8 shadow-sm group-hover:shadow-md transition-all duration-300">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png" 
+                                     alt="Google G" 
+                                     class="max-h-12 object-contain opacity-90 group-hover:opacity-100 transition">
+                            </div>
+                            <div class="mt-3">
+                                <h4 class="font-medium text-sm group-hover:text-black transition">Google G</h4>
+                                <p class="text-gray-500 text-xs">2015 - Present</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="border-t border-gray-100 py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-4 gap-12 mb-16">
+                    <div>
+                        <h4 class="text-sm font-medium mb-4">ARCHIVE</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">
+                            A comprehensive digital museum of brand identity design.
+                        </p>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-medium mb-4">Explore</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-500 text-sm hover:text-black transition">All Logos</a></li>
+                            <li><a href="#" class="text-gray-500 text-sm hover:text-black transition">Collections</a></li>
+                            <li><a href="#" class="text-gray-500 text-sm hover:text-black transition">Design Movements</a></li>
+                            <li><a href="#" class="text-gray-500 text-sm hover:text-black transition">Timeline</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-medium mb-4">Resources</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-500 text-sm hover:text-black transition">Design Essays</a></li>
+                            <li><a href="#" class="text-gray-500 text-sm hover:text-black transition">Case Studies</a></li>
+                            <li><a href="#" class="text-gray-500 text-sm hover:text-black transition">Interview Archive</a></li>
+                            <li><a href="#" class="text-gray-500 text-sm hover:text-black transition">Research Papers</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-sm font-medium mb-4">Connect</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-500 text-sm hover:text-black transition">Contribute</a></li>
+                            <li><a href="#" class="text-gray-500 text-sm hover:text-black transition">Contact</a></li>
+                            <li><a href="#" class="text-gray-500 text-sm hover:text-black transition">Twitter</a></li>
+                            <li><a href="#" class="text-gray-500 text-sm hover:text-black transition">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="pt-8 border-t border-gray-100 flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-6 md:mb-0">
+                        <p class="text-sm text-gray-400">© 2023 Logo Archive. All rights reserved.</p>
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="#" class="text-sm text-gray-400 hover:text-black transition">Privacy</a>
+                        <a href="#" class="text-sm text-gray-400 hover:text-black transition">Terms</a>
+                        <a href="#" class="text-sm text-gray-400 hover:text-black transition">Accessibility</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Tab functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabButtons = document.querySelectorAll('.tab-button');
+            const tabContents = document.querySelectorAll('.tab-content');
+            
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Remove active class from all buttons and contents
+                    tabButtons.forEach(btn => btn.classList.remove('active', 'border-black'));
+                    tabContents.forEach(content => content.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    button.classList.add('active', 'border-black');
+                    
+                    // Show corresponding content
+                    const tabId = button.getAttribute('data-tab');
+                    document.getElementById(tabId).classList.add('active');
+                });
+            });
+            
+            // Color swatch hover effect
+            document.querySelectorAll('.color-swatch').forEach(swatch => {
+                swatch.addEventListener('mouseenter', function() {
+                    const color = this.getAttribute('data-color');
+                    const tooltip = document.createElement('div');
+                    tooltip.className = 'absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded whitespace-nowrap';
+                    tooltip.textContent = this.getAttribute('title') + ' ' + color;
+                    this.appendChild(tooltip);
+                });
+                swatch.addEventListener('mouseleave', function() {
+                    const tooltip = this.querySelector('div');
+                    if (tooltip) tooltip.remove();
+                });
+            });
+            
+            // Animation triggers
+            const fadeElements = document.querySelectorAll('.fade-in');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.animationPlayState = 'running';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            fadeElements.forEach(el => {
+                observer.observe(el);
+                el.style.animationPlayState = 'paused';
+            });
+        });
+    </script>
+</body>
+</html>
