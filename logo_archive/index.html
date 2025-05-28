@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Archive | Iconic Brand Logos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background-color: #fafafa;
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #000;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        ::selection {
+            background: rgba(0,0,0,0.1);
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        .logo-card {
+            transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        .logo-card:hover {
+            transform: translateY(-4px);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-100">
+            <div class="container mx-auto px-6 py-5">
+                <div class="flex justify-between items-center">
+                    <a href="/" class="text-xl tracking-tight font-light">ARCHIVE</a>
+                    <nav class="hidden md:flex space-x-8">
+                        <a href="#" class="nav-link text-sm font-light">Logos</a>
+                        <a href="#" class="nav-link text-sm font-light">History</a>
+                        <a href="#" class="nav-link text-sm font-light">Collections</a>
+                        <a href="#" class="nav-link text-sm font-light">About</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow">
+            <!-- Hero Section -->
+            <section class="py-16 md:py-24 fade-in">
+                <div class="container mx-auto px-6">
+                    <div class="max-w-3xl mx-auto text-center">
+                        <h1 class="text-4xl md:text-6xl font-light mb-6">Iconic Brand Logos</h1>
+                        <p class="text-lg text-gray-600 mb-8">Explore the history and evolution of the world's most recognizable brand symbols.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Logos Section -->
+            <section class="py-12 md:py-20">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-2xl font-light mb-12 text-center">Featured Logos</h2>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <!-- Google Logo Card -->
+                        <a href="pages/google.html" class="logo-card block">
+                            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                                <div class="aspect-w-16 aspect-h-9 bg-gray-50 p-8 flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png" 
+                                         alt="Google Logo" 
+                                         class="h-16 object-contain">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="font-medium mb-2">Google</h3>
+                                    <p class="text-sm text-gray-500">1998 - Present</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Apple Logo Card -->
+                        <a href="pages/apple.html" class="logo-card block">
+                            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                                <div class="aspect-w-16 aspect-h-9 bg-gray-50 p-8 flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/800px-Apple_logo_black.svg.png" 
+                                         alt="Apple Logo" 
+                                         class="h-16 object-contain">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="font-medium mb-2">Apple</h3>
+                                    <p class="text-sm text-gray-500">1977 - Present</p>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- Nike Logo Card -->
+                        <a href="pages/nike.html" class="logo-card block">
+                            <div class="bg-white rounded-lg shadow-sm overflow-hidden">
+                                <div class="aspect-w-16 aspect-h-9 bg-gray-50 p-8 flex items-center justify-center">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Logo_NIKE.svg/800px-Logo_NIKE.svg.png" 
+                                         alt="Nike Logo" 
+                                         class="h-16 object-contain">
+                                </div>
+                                <div class="p-6">
+                                    <h3 class="font-medium mb-2">Nike</h3>
+                                    <p class="text-sm text-gray-500">1971 - Present</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-white border-t border-gray-100 py-12">
+            <div class="container mx-auto px-6">
+                <div class="text-center text-sm text-gray-500">
+                    <p>© 2024 Logo Archive. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

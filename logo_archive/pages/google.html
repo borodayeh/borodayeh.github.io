@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Logo Archive | Logo History & Downloads</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            -webkit-font-smoothing: antialiased;
+            background-color: #fafafa;
+        }
+        .logo-preview {
+            transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
+        }
+        .logo-preview:hover {
+            transform: scale(1.02);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #000;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover:after {
+            width: 100%;
+        }
+        ::selection {
+            background: rgba(0,0,0,0.1);
+        }
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 0.8s ease forwards;
+        }
+        @keyframes fadeIn {
+            to { opacity: 1; }
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #000;
+        }
+        .timeline-item:after {
+            content: '';
+            position: absolute;
+            left: 5px;
+            top: 17px;
+            width: 2px;
+            height: calc(100% - 17px);
+            background: #e5e5e5;
+        }
+        .timeline-item:last-child:after {
+            display: none;
+        }
+        .color-swatch {
+            transition: all 0.3s ease;
+        }
+        .color-swatch:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-sm border-b border-gray-100">
+            <div class="container mx-auto px-6 py-5">
+                <div class="flex justify-between items-center">
+                    <a href="../index.html" class="text-xl tracking-tight font-light">ARCHIVE</a>
+                    <nav class="hidden md:flex space-x-8">
+                        <a href="#" class="nav-link text-sm font-light">Logos</a>
+                        <a href="#" class="nav-link text-sm font-light">History</a>
+                        <a href="#" class="nav-link text-sm font-light">Collections</a>
+                        <a href="#" class="nav-link text-sm font-light">About</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow">
+            <!-- Logo Hero Section -->
+            <section class="py-16 md:py-24 fade-in">
+                <div class="container mx-auto px-6">
+                    <div class="flex flex-col md:flex-row gap-12">
+                        <div class="md:w-1/2 flex items-center justify-center bg-gray-50 rounded-2xl p-12">
+                            <div class="logo-preview w-full max-w-md">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png" 
+                                     alt="Google Logo" 
+                                     class="w-full h-auto">
+                            </div>
+                        </div>
+                        <div class="md:w-1/2">
+                            <div class="mb-6">
+                                <span class="text-sm text-gray-500">Technology / Founded 1998</span>
+                                <h1 class="text-4xl md:text-5xl font-light mt-2">Google</h1>
+                                <div class="flex items-center mt-4 space-x-4">
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">1998 - Present</span>
+                                    <span class="px-3 py-1 bg-gray-100 rounded-full text-sm">Ruth Kedar</span>
+                                </div>
+                            </div>
+                            
+                            <div class="prose max-w-none text-gray-700 mb-8">
+                                <p>Google's logo represents the company's playful and innovative approach to technology. The colorful, geometric letters have become one of the most recognizable brand marks in the world.</p>
+                            </div>
+                            
+                            <div class="flex flex-wrap gap-4 mb-8">
+                                <a href="#downloads" class="px-6 py-3 bg-black text-white rounded-lg flex items-center space-x-2 hover:bg-gray-800 transition">
+                                    <i class="fas fa-download"></i>
+                                    <span>Download Logo</span>
+                                </a>
+                                <a href="#history" class="px-6 py-3 border border-gray-300 rounded-lg flex items-center space-x-2 hover:bg-gray-50 transition">
+                                    <i class="fas fa-history"></i>
+                                    <span>View History</span>
+                                </a>
+                            </div>
+                            
+                            <div class="border-t border-gray-100 pt-6">
+                                <h3 class="text-sm font-medium mb-4">Official Colors</h3>
+                                <div class="flex space-x-4">
+                                    <div class="color-swatch w-10 h-10 rounded-full" 
+                                         style="background-color: #4285F4"
+                                         title="Google Blue" 
+                                         data-color="#4285F4"></div>
+                                    <div class="color-swatch w-10 h-10 rounded-full" 
+                                         style="background-color: #EA4335"
+                                         title="Google Red" 
+                                         data-color="#EA4335"></div>
+                                    <div class="color-swatch w-10 h-10 rounded-full" 
+                                         style="background-color: #FBBC05"
+                                         title="Google Yellow" 
+                                         data-color="#FBBC05"></div>
+                                    <div class="color-swatch w-10 h-10 rounded-full" 
+                                         style="background-color: #34A853"
+                                         title="Google Green" 
+                                         data-color="#34A853"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- History Section -->
+            <section class="py-12 md:py-20">
+                <div class="container mx-auto px-6 max-w-4xl">
+                    <h2 class="text-2xl font-light mb-6">Historical Evolution</h2>
+                    <div class="space-y-8">
+                        <div class="timeline-item">
+                            <h4 class="font-medium mb-1">1998: First Logo</h4>
+                            <p class="text-gray-500">The original Google logo was created by Sergey Brin using GIMP. It featured a simple wordmark with a green 'G' and red 'o'.</p>
+                            <div class="mt-4">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png" 
+                                     alt="1998 Google Logo" 
+                                     class="w-64 h-auto border border-gray-200 rounded">
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-medium mb-1">1999: Ruth Kedar Design</h4>
+                            <p class="text-gray-500">Professional designer Ruth Kedar created a new logo with the now-famous primary colors and playful typography.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-medium mb-1">2015: Current Logo</h4>
+                            <p class="text-gray-500">Google introduced a new, flatter design that maintains the playful character while being more modern and scalable.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Variations Section -->
+            <section class="py-12 md:py-20 bg-gray-50">
+                <div class="container mx-auto px-6 max-w-4xl">
+                    <h2 class="text-2xl font-light mb-6">Logo Variations</h2>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="border border-gray-200 rounded-lg p-6">
+                            <div class="bg-gray-100 p-8 rounded flex justify-center mb-6">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/800px-Google_2015_logo.svg.png" 
+                                     alt="Google Logo" 
+                                     class="h-20 object-contain">
+                            </div>
+                            <h3 class="font-medium mb-2">Primary Logo</h3>
+                            <p class="text-sm text-gray-500 mb-4">Standard Google logo with full wordmark</p>
+                            <a href="#" class="text-sm font-medium flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                                <span>Download</span>
+                                <i class="fas fa-arrow-down text-xs"></i>
+                            </a>
+                        </div>
+                        <div class="border border-gray-200 rounded-lg p-6">
+                            <div class="bg-gray-100 p-8 rounded flex justify-center mb-6">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png" 
+                                     alt="Google G" 
+                                     class="h-20 object-contain">
+                            </div>
+                            <h3 class="font-medium mb-2">G Icon</h3>
+                            <p class="text-sm text-gray-500 mb-4">Standalone G icon for favicon and small applications</p>
+                            <a href="#" class="text-sm font-medium flex items-center space-x-2 text-blue-600 hover:text-blue-800">
+                                <span>Download</span>
+                                <i class="fas fa-arrow-down text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Color swatch hover effect
+        document.querySelectorAll('.color-swatch').forEach(swatch => {
+            swatch.addEventListener('mouseenter', function() {
+                const color = this.getAttribute('data-color');
+                const tooltip = document.createElement('div');
+                tooltip.className = 'absolute -top-8 left-1/2 transform -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded whitespace-nowrap';
+                tooltip.textContent = this.getAttribute('title') + ' ' + color;
+                this.appendChild(tooltip);
+            });
+            swatch.addEventListener('mouseleave', function() {
+                const tooltip = this.querySelector('div');
+                if (tooltip) tooltip.remove();
+            });
+        });
+    </script>
+</body>
+</html> 

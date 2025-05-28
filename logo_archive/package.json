@@ -1,0 +1,14 @@
+{
+  "name": "logo-archive",
+  "version": "1.0.0",
+  "description": "A systematic archive of brand identities",
+  "main": "js/app.js",
+  "type": "module",
+  "scripts": {
+    "start": "serve .",
+    "dev": "serve ."
+  },
+  "dependencies": {
+    "serve": "^14.2.1"
+  }
+} 
